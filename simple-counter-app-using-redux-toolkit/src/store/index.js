@@ -30,11 +30,23 @@ const counterSlice = createSlice({
     }
 })
 
+// We have to export the counterSlice.actions
 export const actions = counterSlice.actions;
 
-// STORE
+// Creating CONFIGURE STORE
+// It will contain an object which will contain a property of the reducer (We will give it the counter reudcer)
+
 const store = configureStore({
     reducer: counterSlice.reducer
 })
 
 export default store
+
+
+
+// Steps
+// 1. import configureStore and counterSlice from @reduxjs/toolkit
+// 2. Create a slice called counterSlice using counterSlice 
+// 3. counterSlice will contain a name, initial state and reducer functions
+// 4. creating store and export it
+// 5. export the actions of counterSlice
