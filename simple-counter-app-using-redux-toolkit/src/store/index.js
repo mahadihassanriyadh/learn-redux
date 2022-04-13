@@ -46,7 +46,7 @@ export default store
 
 // Steps
 // 1. import configureStore and counterSlice from @reduxjs/toolkit
-// 2. Create a slice called counterSlice using counterSlice 
+// 2. Create a slice called counterSlice using createSlice 
 // 3. counterSlice will contain a name, initial state and reducer functions
 // 4. creating store and export it
 // 5. export the actions of counterSlice
